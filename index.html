@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ioana &amp; Adam — 17.07.2027</title>
+  <meta name="description" content="Invitación de boda de Ioana y Adam — 17 de julio de 2027 · Tarragona" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ===== Selector de idioma ===== -->
+  <div class="lang-switch" role="group" aria-label="Idioma / Limbă">
+    <button class="lang-btn active" data-lang="es" type="button">ES</button>
+    <span class="lang-sep"></span>
+    <button class="lang-btn" data-lang="ro" type="button">RO</button>
+  </div>
+
+  <!-- ===== Botón flotante de música ===== -->
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Música" hidden>
+    <span class="music-icon" id="musicIcon">♪</span>
+  </button>
+
+  <!-- ===== Pantalla de bienvenida ===== -->
+  <div id="intro" class="intro">
+    <div class="intro-bg"></div>
+    <div class="intro-content">
+      <p class="intro-names">Ioana &amp; Adam</p>
+      <h2 class="intro-title" data-i18n="welcome">Bienvenidos a la invitación de Ioana y Adam</h2>
+      <p class="intro-note" data-i18n="musicNote">La música de fondo es parte de la experiencia</p>
+      <div class="intro-buttons">
+        <button id="enterMusic" class="btn btn-gold" type="button" data-i18n="enterMusic">Ingresar con música</button>
+        <button id="enterNoMusic" class="btn btn-outline" type="button" data-i18n="enterNoMusic">Ingresar sin música</button>
+      </div>
+    </div>
+  </div>
+  <main id="main" class="site hidden">
+    <!-- ===== HERO ===== -->
+    <header class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-date" data-i18n="date">17.07.2027</p>
+        <h1 class="hero-names">Ioana <span class="amp">&amp;</span> Adam</h1>
+        <p class="hero-quote" data-i18n="quote">El amor es la poesía de los sentidos</p>
+        <p class="countdown-label" data-i18n="countdownLabel">Faltan</p>
+        <div class="countdown">
+          <div class="count-item"><span class="count-num" id="days">00</span><span class="count-label" data-i18n="days">días</span></div>
+          <div class="count-item"><span class="count-num" id="hours">00</span><span class="count-label" data-i18n="hours">horas</span></div>
+          <div class="count-item"><span class="count-num" id="minutes">00</span><span class="count-label" data-i18n="minutes">minutos</span></div>
+          <div class="count-item"><span class="count-num" id="seconds">00</span><span class="count-label" data-i18n="seconds">segundos</span></div>
+        </div>
+      </div>
+      <a href="#invitacion" class="scroll-down" aria-label="Scroll">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+    </header>
+
+    <!-- ===== INVITACIÓN ===== -->
+    <section class="invitation" id="invitacion">
+      <div class="invitation-inner">
+        <div class="invitation-photo">
+          <img src="images/caricia_bn.jpeg" alt="Ioana y Adam" loading="lazy" />
+        </div>
+        <div class="invitation-text">
+          <p class="kicker" data-i18n="invitationKicker">Con todo nuestro amor</p>
+          <h2 class="section-title" data-i18n="invitationTitle">Será un día inolvidable y queremos vivirlo contigo</h2>
+          <div class="divider"><span>✦</span></div>
+          <p class="section-text" data-i18n="invitationText">Nos hace muy felices invitarte a celebrar nuestro amor, el comienzo de una nueva etapa de nuestra vida.</p>
+          <div class="names-sign">Ioana &amp; Adam</div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== CEREMONIA Y BANQUETE ===== -->
+    <section class="events" id="eventos">
+      <div class="events-inner">
+        <div class="event-card">
+          <div class="event-icon">⛪</div>
+          <p class="kicker" data-i18n="ceremonyKicker">Ceremonia</p>
+          <h3 class="event-title" data-i18n="ceremonyTitle">Ceremonia religiosa</h3>
+          <p class="event-date" data-i18n="ceremonyDate">Sábado 17 de julio de 2027 · 16:30 h</p>
+          <p class="event-place" data-i18n="ceremonyPlace">Iglesia El Loreto de Tarragona</p>
+          <div class="event-actions">
+            <a class="btn btn-solid" href="https://www.google.com/maps/search/?api=1&query=Iglesia%20El%20Loreto%20Tarragona" target="_blank" rel="noopener" data-i18n="howToGet">Cómo llegar</a>
+            <a class="btn btn-ghost" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda%20Ioana%20%26%20Adam%20—%20Ceremonia&dates=20270717T143000Z/20270717T153000Z&details=Ceremonia%20en%20la%20Iglesia%20El%20Loreto&location=Iglesia%20El%20Loreto%2C%20Tarragona&ctz=Europe%2FMadrid" target="_blank" rel="noopener" data-i18n="addCalendar">Agendar</a>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-icon">🥂</div>
+          <p class="kicker" data-i18n="banquetKicker">Celebración</p>
+          <h3 class="event-title" data-i18n="banquetTitle">Banquete</h3>
+          <p class="event-date" data-i18n="banquetDate">Sábado 17 de julio de 2027 · 19:00 h</p>
+          <p class="event-place" data-i18n="banquetPlace">Casablanca Miami Platja</p>
+          <div class="event-actions">
+            <a class="btn btn-solid" href="https://www.google.com/maps/search/?api=1&query=Casablanca%20Miami%20Platja" target="_blank" rel="noopener" data-i18n="howToGet">Cómo llegar</a>
+            <a class="btn btn-ghost" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda%20Ioana%20%26%20Adam%20—%20Banquete&dates=20270717T170000Z/20270717T230000Z&details=Banquete%20en%20Casablanca%20Miami%20Platja&location=Casablanca%20Miami%20Platja&ctz=Europe%2FMadrid" target="_blank" rel="noopener" data-i18n="addCalendar">Agendar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section class="gallery" id="galeria">
+      <div class="gallery-head">
+        <p class="kicker" data-i18n="galleryKicker">Galería</p>
+        <h2 class="section-title" data-i18n="galleryTitle">Retratos de nuestro amor</h2>
+        <div class="divider"><span>✦</span></div>
+        <p class="section-text" data-i18n="galleryText">Un minuto, un segundo, un instante que queda en la eternidad</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item" data-full="images/beso.jpeg"><img src="images/beso.jpeg" alt="Ioana y Adam besándose" loading="lazy" /></figure>
+        <figure class="gallery-item" data-full="images/playa_color.jpeg"><img src="images/playa_color.jpeg" alt="Ioana y Adam en la playa" loading="lazy" /></figure>
+        <figure class="gallery-item" data-full="images/playa_bn.jpeg"><img src="images/playa_bn.jpeg" alt="Ioana y Adam en la playa en blanco y negro" loading="lazy" /></figure>
+        <figure class="gallery-item" data-full="images/caricia_bn.jpeg"><img src="images/caricia_bn.jpeg" alt="Ioana y Adam, una caricia" loading="lazy" /></figure>
+      </div>
+    </section>
+    <!-- ===== RSVP ===== -->
+    <section class="rsvp" id="rsvp">
+      <div class="rsvp-inner">
+        <p class="kicker" data-i18n="rsvpKicker">Confirma tu asistencia</p>
+        <h2 class="section-title" data-i18n="rsvpTitle">¿Vienes a celebrarlo con nosotros?</h2>
+        <p class="section-text" data-i18n="rsvpText">Es importante que confirmes tu asistencia antes del 1 de junio de 2027.</p>
+        <a id="rsvpBtn" class="btn btn-gold" href="#" target="_blank" rel="noopener" data-i18n="rsvpButton">Confirmar asistencia</a>
+      </div>
+    </section>
+
+    <!-- ===== DETALLES ===== -->
+    <section class="details" id="detalles">
+      <div class="details-head">
+        <p class="kicker" data-i18n="detailsKicker">Información</p>
+        <h2 class="section-title" data-i18n="detailsTitle">Detalles de la boda</h2>
+        <div class="divider"><span>✦</span></div>
+      </div>
+      <div class="details-grid">
+        <div class="detail-card">
+          <div class="detail-icon">👔</div>
+          <h3 class="detail-title" data-i18n="dresscodeTitle">Dress Code</h3>
+          <p class="detail-text" data-i18n="dresscodeText">Os pedimos un look elegante: traje para ellos y vestido de fiesta para ellas. Colores sugeridos: azul, beige y dorado.</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🎵</div>
+          <h3 class="detail-title" data-i18n="musicTitle">Música</h3>
+          <p class="detail-text" data-i18n="musicText">La canción de esta invitación es «The Power of Love» de Céline Dion, una de nuestras favoritas.</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">💡</div>
+          <h3 class="detail-title" data-i18n="tipsTitle">Tips y Notas</h3>
+          <p class="detail-text" data-i18n="tipsText">Os esperamos 15 minutos antes en la iglesia. Tras la ceremonia nos trasladaremos al banquete en Casablanca Miami Platja.</p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🎁</div>
+          <h3 class="detail-title" data-i18n="giftsTitle">Regalos</h3>
+          <p class="detail-text" data-i18n="giftsText">El mejor regalo es vuestra presencia. Si queréis tener un detalle con nosotros, os lo agradecemos de corazón.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HASHTAG / COMPARTIR ===== -->
+    <section class="hashtag" id="compartir">
+      <div class="hashtag-inner">
+        <h2 class="section-title" data-i18n="hashtagTitle">Compartimos este día junto a ti</h2>
+        <p class="section-text" data-i18n="hashtagText">Comparte tus fotos y vídeos de este hermoso día</p>
+        <button id="hashtagBtn" class="hashtag-chip" type="button">#ioanayadam</button>
+        <p class="hashtag-copied" id="hashtagCopied">✓</p>
+      </div>
+    </section>
+
+    <!-- ===== PIE ===== -->
+    <footer class="footer">
+      <p class="footer-names">Ioana &amp; Adam</p>
+      <p class="footer-date">17 · 07 · 2027</p>
+      <p class="footer-made" data-i18n="footerMade">Hecho con ♥ para Ioana y Adam</p>
+    </footer>
+  </main>
+
+  <!-- ===== Reproductor de música ===== -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music/CelineDion-ThePowerOfLove.m4a" type="audio/mp4" />
+  </audio>
+
+  <!-- ===== Lightbox galería ===== -->
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
