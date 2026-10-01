@@ -30,7 +30,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-sans);
   color: var(--text);
-  background: var(--cream);
+  background: var(--cream) url("../images/background-light-blue.jpeg") center/cover no-repeat fixed;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -394,7 +394,7 @@ a { text-decoration: none; color: inherit; }
    Invitación
    ========================================================================== */
 .invitation {
-  background: var(--cream);
+  background: transparent;
   padding: clamp(4rem, 9vw, 7rem) 1.5rem;
 }
 .invitation-inner {
@@ -481,7 +481,7 @@ a { text-decoration: none; color: inherit; }
    Galería
    ========================================================================== */
 .gallery {
-  background: var(--cream);
+  background: transparent;
   padding: clamp(4rem, 9vw, 7rem) 1.5rem;
 }
 .gallery-head {
@@ -540,7 +540,7 @@ a { text-decoration: none; color: inherit; }
    Detalles
    ========================================================================== */
 .details {
-  background: var(--cream);
+  background: transparent;
   padding: clamp(4rem, 9vw, 7rem) 1.5rem;
 }
 .details-head {
