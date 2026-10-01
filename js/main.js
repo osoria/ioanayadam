@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Invitación de boda · Ioana & Adam
+   Invitación de boda · Ioana & Iustin
    ========================================================================== */
 
 /* ---- CONFIGURACIÓN (edita aquí) ---- */
@@ -9,13 +9,13 @@ const CONFIG = {
   // Número de WhatsApp para confirmar asistencia (código de país sin "+")
   whatsapp: '34642297641',
   // Hashtag para compartir fotos
-  hashtag: '#ioanayadam'
+  hashtag: '#ioanayiustin'
 };
 
 /* ---- Traducciones ---- */
 const translations = {
   es: {
-    welcome: 'Bienvenidos a la invitación de Ioana y Adam',
+    welcome: 'Bienvenidos a la invitación de Ioana y Iustin',
     musicNote: 'La música de fondo es parte de la experiencia',
     enterMusic: 'Ingresar con música',
     enterNoMusic: 'Ingresar sin música',
@@ -43,26 +43,26 @@ const translations = {
     rsvpTitle: '¿Vienes a celebrarlo con nosotros?',
     rsvpText: 'Es importante que confirmes tu asistencia antes del 1 de junio de 2027.',
     rsvpButton: 'Confirmar asistencia',
-    rsvpMessage: 'Hola, confirmo mi asistencia a la boda de Ioana y Adam',
+    rsvpMessage: 'Hola, confirmo mi asistencia a la boda de Ioana y Iustin',
     galleryKicker: 'Galería',
     galleryTitle: 'Retratos de nuestro amor',
     galleryText: 'Un minuto, un segundo, un instante que queda en la eternidad',
     detailsKicker: 'Información',
     detailsTitle: 'Detalles de la boda',
     dresscodeTitle: 'Dress Code',
-    dresscodeText: 'Os pedimos un look elegante: traje para ellos y vestido de fiesta para ellas. Colores sugeridos: azul, beige y dorado.',
+    dresscodeText: 'Nos encantará que nos acompañéis en nuestra celebración vistiendo en tonalidades de azul, marrón y amarillo pastel, creando juntos una paleta cálida y mediterránea para este día tan especial.',
     musicTitle: 'Música',
-    musicText: 'La canción de esta invitación es «The Power of Love» de Céline Dion, una de nuestras favoritas.',
+    musicText: 'La canción de esta invitación es «The Power of Love» de Céline Dion, una de nuestras favoritas, pero pide tu canción que se la pondremos al DJ para que la bailes.',
     tipsTitle: 'Tips y Notas',
-    tipsText: 'Os esperamos 15 minutos antes en la iglesia. Tras la ceremonia nos trasladaremos al banquete en Casablanca Miami Platja.',
+    tipsText: 'No os olvidéis de traer vuestra alegria y muchas ganas de pasarlo bien.',
     giftsTitle: 'Regalos',
     giftsText: 'El mejor regalo es vuestra presencia. Si queréis tener un detalle con nosotros, os lo agradecemos de corazón.',
     hashtagTitle: 'Compartimos este día junto a ti',
     hashtagText: 'Comparte tus fotos y vídeos de este hermoso día',
-    footerMade: 'Hecho con ♥ para Ioana y Adam'
+    footerMade: 'Hecho con ♥ para Ioana y Iustin'
   },
   ro: {
-    welcome: 'Bine ați venit la invitația Ioanei și a lui Adam',
+    welcome: 'Bine ați venit la invitația Ioanei și a lui Iustin',
     musicNote: 'Muzica de fundal face parte din experiență',
     enterMusic: 'Intră cu muzică',
     enterNoMusic: 'Intră fără muzică',
@@ -90,23 +90,23 @@ const translations = {
     rsvpTitle: 'Vii să sărbătorești alături de noi?',
     rsvpText: 'Este important să confirmi prezența până la 1 iunie 2027.',
     rsvpButton: 'Confirmă prezența',
-    rsvpMessage: 'Bună, confirm prezența la nunta Ioanei și a lui Adam',
+    rsvpMessage: 'Bună, confirm prezența la nunta Ioanei și a lui Iustin',
     galleryKicker: 'Galerie',
     galleryTitle: 'Portretele iubirii noastre',
     galleryText: 'Un minut, o secundă, o clipă care rămâne în eternitate',
     detailsKicker: 'Informații',
     detailsTitle: 'Detalii despre nuntă',
     dresscodeTitle: 'Ținuta (Dress Code)',
-    dresscodeText: 'Vă rugăm să purtați o ținută elegantă: costum pentru bărbați și rochie de seară pentru femei. Culori sugerate: albastru, bej și auriu.',
+    dresscodeText: 'Ne va bucura să ne fiți alături la celebrarea noastră îmbrăcați în nuanțe de albastru, maro și galben pastel, creând împreună o paletă caldă și mediteraneană pentru această zi atât de specială.',
     musicTitle: 'Muzică',
-    musicText: 'Melodia acestei invitații este «The Power of Love» de Céline Dion, una dintre preferatele noastre.',
+    musicText: 'Melodia acestei invitații este «The Power of Love» de Céline Dion, una dintre preferatele noastre, dar cere melodia ta și i-o vom da DJ-ului ca să o dansezi.',
     tipsTitle: 'Sfaturi și note',
-    tipsText: 'Vă așteptăm la biserică cu 15 minute înainte. După ceremonie ne vom îndrepta spre banchetul de la Casablanca Miami Platja.',
+    tipsText: 'Nu uitați să aduceți bucuria voastră și mult chef de distracție.',
     giftsTitle: 'Cadouri',
     giftsText: 'Cel mai frumos cadou este prezența voastră. Dacă doriți să ne oferiți ceva, vă mulțumim din suflet.',
     hashtagTitle: 'Împărtășim această zi alături de tine',
     hashtagText: 'Distribuie fotografiile și videoclipurile tale din această zi frumoasă',
-    footerMade: 'Făcut cu ♥ pentru Ioana și Adam'
+    footerMade: 'Făcut cu ♥ pentru Ioana și Iustin'
   }
 };
 

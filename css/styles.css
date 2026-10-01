@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Invitación de boda · Ioana & Adam
+   Invitación de boda · Ioana & Iustin
    Paleta: #273A58 · #405C8B · #869DB4 · #FDDC98 · #8C5C35
    ========================================================================== */
 
@@ -123,10 +123,10 @@ a { text-decoration: none; color: inherit; }
 
 .btn-ghost {
   background: transparent;
-  color: var(--blue);
-  border-color: var(--lightblue);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
 }
-.btn-ghost:hover { background: rgba(134, 157, 180, 0.16); }
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.14); }
 
 /* ==========================================================================
    Selector de idioma
@@ -286,7 +286,7 @@ a { text-decoration: none; color: inherit; }
   position: absolute;
   inset: 0;
   background: url("../images/playa_color.jpeg") center/cover no-repeat;
-  filter: brightness(0.5) saturate(1.05);
+  /*filter: brightness(0.5) saturate(1.05);*/
   transform: scale(1.05);
 }
 .hero-bg::after {
@@ -578,6 +578,41 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 0.7rem;
 }
 .detail-text { font-size: 0.92rem; color: var(--muted); }
+.palette {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.1rem;
+}
+.swatch {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(39, 58, 88, 0.18);
+  box-shadow: 0 2px 6px rgba(39, 58, 88, 0.15);
+}
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-top: 1.1rem;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  background: #1EBE57;
+  box-shadow: 0 12px 26px rgba(37, 211, 102, 0.45);
+}
+.whatsapp-btn svg {
+  width: 26px;
+  height: 26px;
+}
 
 /* ==========================================================================
    Hashtag / Compartir
