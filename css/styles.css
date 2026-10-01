@@ -222,7 +222,7 @@ a { text-decoration: none; color: inherit; }
   position: absolute;
   inset: 0;
   background: url("../images/playa_bn.jpeg") center/cover no-repeat;
-  filter: brightness(0.55) saturate(0.85);
+  /*filter: brightness(0.55) saturate(0.85);*/
 }
 .intro-bg::after {
   content: "";
