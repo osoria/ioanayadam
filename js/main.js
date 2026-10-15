@@ -45,8 +45,11 @@ const translations = {
     rsvpKicker: 'Confirma tu asistencia',
     rsvpTitle: '¿Vienes a celebrarlo con nosotros?',
     rsvpText: 'Es importante que confirmes tu asistencia antes del 1 de junio de 2027.',
-    rsvpButton: 'Confirmar asistencia',
-    rsvpMessage: 'Hola, confirmo mi asistencia a la boda de Ioana y Iustin',
+    rsvpConfirmTitle: 'CONFIRMAR ASISTENCIA',
+    rsvpSoloButton: 'Iré solo',
+    rsvpCompanionButton: 'Iré acompañado',
+    rsvpSoloMessage: 'Hola, confirmo mi asistencia a la boda de Ioana y Iustin. Iré solo',
+    rsvpCompanionMessage: 'Hola, confirmo mi asistencia a la boda de Ioana y Iustin. Iré acompañado con ',
     galleryKicker: 'Galería',
     galleryTitle: 'Retratos de nuestro amor',
     galleryText: 'Un minuto, un segundo, un instante que queda en la eternidad',
@@ -57,11 +60,11 @@ const translations = {
     musicTitle: 'Música',
     musicText: 'La canción de esta invitación es «The Power of Love» de Céline Dion, una de nuestras favoritas, pero pide tu canción que se la pondremos al DJ para que la bailes.',
     tipsTitle: 'Tips y Notas',
-    tipsText: 'No os olvidéis de traer vuestra alegria y muchas ganas de pasarlo bien.',
+    tipsText: 'No os olvidéis de traer vuestra alegria y muchas ganas de pasarlo bien. Si tienes alergias e intolerancias, cuéntanoslo.',
     giftsTitle: 'Regalos',
     giftsText: 'El mejor regalo es vuestra presencia. Si queréis tener un detalle con nosotros, os lo agradecemos de corazón.',
     hashtagTitle: 'Compartimos este día junto a ti',
-    hashtagText: 'Comparte tus fotos y vídeos de este hermoso día',
+    hashtagText: 'Comparte tus fotos y vídeos de este hermoso día. Utiliza el hashtag de Instagram:',
     footerMade: 'Hecho con ♥ para Ioana y Iustin'
   },
   ro: {
@@ -95,8 +98,11 @@ const translations = {
     rsvpKicker: 'Confirmă prezența',
     rsvpTitle: 'Vii să sărbătorești alături de noi?',
     rsvpText: 'Este important să confirmi prezența până la 1 iunie 2027.',
-    rsvpButton: 'Confirmă prezența',
-    rsvpMessage: 'Bună, confirm prezența la nunta Ioanei și a lui Iustin',
+    rsvpConfirmTitle: 'CONFIRMĂ PREZENȚA',
+    rsvpSoloButton: 'Vin singur',
+    rsvpCompanionButton: 'Vin însoțit',
+    rsvpSoloMessage: 'Bună, confirm prezența la nunta Ioanei și a lui Iustin. Vin singur',
+    rsvpCompanionMessage: 'Bună, confirm prezența la nunta Ioanei și a lui Iustin. Vin însoțit de ',
     galleryKicker: 'Galerie',
     galleryTitle: 'Portretele iubirii noastre',
     galleryText: 'Un minut, o secundă, o clipă care rămâne în eternitate',
@@ -107,11 +113,11 @@ const translations = {
     musicTitle: 'Muzică',
     musicText: 'Melodia acestei invitații este «The Power of Love» de Céline Dion, una dintre preferatele noastre, dar cere melodia ta și i-o vom da DJ-ului ca să o dansezi.',
     tipsTitle: 'Sfaturi și note',
-    tipsText: 'Nu uitați să aduceți bucuria voastră și mult chef de distracție.',
+    tipsText: 'Nu uitați să aduceți bucuria voastră și mult chef de distracție. Dacă aveți alergii sau intoleranțe, spuneți-ne.',
     giftsTitle: 'Cadouri',
     giftsText: 'Cel mai frumos cadou este prezența voastră. Dacă doriți să ne oferiți ceva, vă mulțumim din suflet.',
     hashtagTitle: 'Împărtășim această zi alături de tine',
-    hashtagText: 'Distribuie fotografiile și videoclipurile tale din această zi frumoasă',
+    hashtagText: 'Distribuie fotografiile și videoclipurile tale din această zi frumoasă. Folosește hashtagul de Instagram:',
     footerMade: 'Făcut cu ♥ pentru Ioana și Iustin'
   }
 };
@@ -134,10 +140,11 @@ function applyLanguage(lang) {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
 
-  // Enlace RSVP (WhatsApp)
-  const rsvpBtn = document.getElementById('rsvpBtn');
-  const msg = encodeURIComponent(translations[lang].rsvpMessage);
-  rsvpBtn.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + msg;
+  // Enlaces RSVP (WhatsApp)
+  const rsvpSoloBtn = document.getElementById('rsvpSoloBtn');
+  const rsvpCompanionBtn = document.getElementById('rsvpCompanionBtn');
+  rsvpSoloBtn.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(translations[lang].rsvpSoloMessage);
+  rsvpCompanionBtn.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(translations[lang].rsvpCompanionMessage);
 
   // Hashtag
   document.getElementById('hashtagBtn').textContent = CONFIG.hashtag;

@@ -559,6 +559,21 @@ a { text-decoration: none; color: inherit; }
 .rsvp .section-title { color: #fff; }
 .rsvp .section-text { color: var(--lightblue); margin: 0 auto 2rem; }
 .rsvp .btn { min-width: 260px; }
+.rsvp-action-title {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+.rsvp-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
 /* ==========================================================================
    Detalles
    ========================================================================== */
@@ -635,6 +650,25 @@ a { text-decoration: none; color: inherit; }
 .whatsapp-btn svg {
   width: 26px;
   height: 26px;
+}
+.detail-iban {
+  margin-top: 1.1rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  color: var(--navy);
+  background: var(--cream);
+  border: 1px dashed rgba(39, 58, 88, 0.3);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  word-break: break-all;
+}
+.detail-iban .iban-label {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: normal;
+  margin-right: 0.5rem;
+  color: var(--gold-strong);
 }
 
 /* ==========================================================================
@@ -764,6 +798,8 @@ a { text-decoration: none; color: inherit; }
   .countdown { flex-wrap: wrap; }
   .intro-buttons { width: 100%; }
   .intro-buttons .btn { width: 100%; }
+  .rsvp-buttons { width: 100%; }
+  .rsvp-buttons .btn { width: 100%; }
 }
 
 
